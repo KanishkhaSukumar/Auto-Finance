@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 test.use({ headless: false });
 
 test('Login and create lead flow', async ({ page }) => {
-  // Step 1: Open website
+  // Step 1: Open website test
   await page.goto('https://qa-autofin.carandbike.com/');
   await expect(page).toHaveTitle(/Mahindra First Choice/);
 
